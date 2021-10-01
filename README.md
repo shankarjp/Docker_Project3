@@ -19,3 +19,9 @@ docker run -it <imageid> npm run test
 docker-compose up
 docker exec -it <containerid> npm run test
 ```
+
+### Starting Production Application
+```
+docker build .
+docker run -it -p 3000:80 <imageid>
+```
